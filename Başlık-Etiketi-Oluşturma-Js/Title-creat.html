@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Başlık-Oluşturma</title>
+    <!--css Link-->
+    <link rel="stylesheet" href="./Title-Creat.css" />
+    <!--Boostrap Link-->
+    <link rel="stylesheet" href="./boostrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./boostrap/bootstrap.min.css.map" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="border border-1 p-5 w-auto h-auto rounded-3 border-primary"
+      id="creat-contact"
+    >
+      <div class="text-center mb-4">
+        <h3 class="d-sm-inline pb-2 border-bottom fs-4 text-primary">
+          Başlık Etiketi Oluşturma
+        </h3>
+      </div>
+      <form class="border-bottom pb-3 mb-3" id="frm-title">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Başlık İsmini Giriniz"
+          id="frm-name"
+        />
+        <input
+          type="text"
+          class="form-control mt-3"
+          placeholder="Başlık Rengini Giriniz"
+          id="frm-color"
+        />
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary" id="creat-btn" disabled>
+            Oluştur
+          </button>
+          <button type="reset" class="btn btn-primary" disabled id="clearbtn">
+            Etiketleri Temizle
+          </button>
+        </div>
+      </form>
+      <div
+        class="d-flex justify-content-center flex-column align-items-center"
+        id="container-tıtle"
+      >
+        <!-- <div class="border border-2 rounded-2 text-center p-2 w-100 mb-2 d-flex justify-content-between contact">
+            <h2 class="fs-6 d-inline-block">denme</h2>
+            <i class="bi bi-trash3-fill text-primary"></i>
+         </div> -->
+      </div>
+    </div>
+    <script src="./Title-Creat.js"></script>
+    <!--js link-->
+  </body>
+</html>
